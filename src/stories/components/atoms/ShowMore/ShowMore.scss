@@ -1,9 +1,10 @@
+@import '../../variables';
 .showMore {
   button {
     background-color: white;
     padding: 10px 20px;
     border: 0;
-    color: #1a3381;
+    color: $dark-blue;
     cursor: pointer;
     font-size: 14px;
 
