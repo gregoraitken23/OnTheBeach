@@ -21,7 +21,7 @@ const ShowMoreButton: React.FC<ShowMoreButtonProps> = ({
     <div className="showMore">
       <button onClick={toggleContent} className={isDescriptionOpen}>
         <span>
-          <b>{buttonText}</b> about this {product}
+          <strong>{buttonText}</strong> about this {product}
         </span>
       </button>
     </div>

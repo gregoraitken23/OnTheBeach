@@ -58,7 +58,7 @@ export const SortButton = ({
         onClick={handleClick}
       >
         {buttonText}
-        <b> {secondaryBoldText}</b>
+        <strong> {secondaryBoldText}</strong>
         <span
           className={isClicked ? "sortButton-svg--clicked" : "sortButton-svg"}
         >

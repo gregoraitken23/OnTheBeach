@@ -8,9 +8,15 @@
 
 .offerCard {
   display: flex;
+  @media  screen and (max:900px) {
+    display:block;    
+  }
   background: white;
   justify-content: center;
   &-hotelImage {
+    @media  screen and (max:900px) {
+      width: 100%; 
+    }
     width: 60%;
     position: relative;
     img {
@@ -20,6 +26,9 @@
     }
   }
   &-hotelInfo {
+    @media  screen and (max:900px) {
+      width: 100%; 
+    }
     padding: 20px;
     width: 40%;
   }
@@ -27,6 +36,7 @@
 .hotelDescription {
   background: white;
   padding: 15px 20px;
+
 
   h3 {
     color: #1a3381;
