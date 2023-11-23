@@ -1,3 +1,5 @@
+$layout-breakpoint-small: 900px;
+
 .bookButton {
   text-align: center;
   width: 100%;
@@ -7,6 +9,10 @@
   line-height: 25px;
   color: #17317f;
   min-width: 150px;
+  @media (max-width: $layout-breakpoint-small)  {
+    min-width: 50px; 
+    width: 91%;
+  }
   border: 0;
   border-radius: 3px;
   cursor: pointer;

@@ -1,3 +1,5 @@
+$layout-breakpoint-small: 900px;
+
 .offerCardContainer {
   max-width: 738px;
   .showMore {
@@ -8,13 +10,13 @@
 
 .offerCard {
   display: flex;
-  @media  screen and (max:900px) {
+  @media (max-width: $layout-breakpoint-small)  {
     display:block;    
   }
   background: white;
   justify-content: center;
   &-hotelImage {
-    @media  screen and (max:900px) {
+    @media (max-width: $layout-breakpoint-small)  {
       width: 100%; 
     }
     width: 60%;
@@ -26,7 +28,7 @@
     }
   }
   &-hotelInfo {
-    @media  screen and (max:900px) {
+    @media (max-width: $layout-breakpoint-small)  {
       width: 100%; 
     }
     padding: 20px;

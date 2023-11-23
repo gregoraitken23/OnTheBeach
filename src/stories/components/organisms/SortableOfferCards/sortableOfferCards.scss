@@ -1,4 +1,10 @@
+$layout-breakpoint-small: 900px;
+
 .sortableInfoCards {
+
+  @media (max-width: $layout-breakpoint-small)  {
+    padding: 40px; 
+  }
   .offerCardContainer {
     margin-bottom: 25px;
   }
@@ -15,6 +21,9 @@
 
 /* Sidebar styles */
 .sidebar {
+  @media (max-width: $layout-breakpoint-small)  {
+    width: 100%; 
+  }
   width: 30%;
   padding: 20px 0;
   float: left;
@@ -22,6 +31,9 @@
 
 /* Content styles */
 .content {
+  @media (max-width: $layout-breakpoint-small)  {
+    width: 100%; 
+  }
   width: 70%;
   padding: 20px 0;
   float: left;

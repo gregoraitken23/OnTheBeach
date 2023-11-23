@@ -1,3 +1,5 @@
+$layout-breakpoint-small: 900px;
+
 .sortButton {
   font-family: "Nunito Sans", sans-serif;
   font-size: 13px;
@@ -8,6 +10,9 @@
     font-size: 16px;
     text-align: left;
     width: 250px;
+    @media (max-width: $layout-breakpoint-small)  {
+      width: 100%; 
+    }
   }
   svg {
     width: 25px;
