@@ -2,7 +2,7 @@
 
 This was a fun one to work on!
 
-I decided to build this in Storybook so we can use the playground to see how the individual components work individually.
+I decided to build this in Storybook so we can use the playground to see how the individual components work alone.
 these have been built as modularaly styled components so could be used together or on their own.
 
 Once you have cloned the Repo:
@@ -16,7 +16,7 @@ In the project directory, you can run:
 ### `npm run storybook` to run the storybook instance
 
 Runs the app in the development mode.\
-Open [http://localhost:6000](http://localhost:6000) to view it in the browser.
+Open [http://localhost:6006](http://localhost:6000) to view it in the browser.
 
 ### `npm run start` to run the UI where I have placed the component
 
