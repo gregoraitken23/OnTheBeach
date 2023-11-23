@@ -1,3 +1,4 @@
+@import 'variables';
 $layout-breakpoint-small: 900px;
 
 .offerCardContainer {
@@ -41,7 +42,7 @@ $layout-breakpoint-small: 900px;
 
 
   h3 {
-    color: #1a3381;
+    color: $dark-blue;
     font-size: 14px;
     margin: none;
     font-family: "Nunito Sans", sans-serif;

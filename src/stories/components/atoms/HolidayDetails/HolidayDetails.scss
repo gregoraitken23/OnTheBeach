@@ -1,18 +1,19 @@
+@import 'variables';
 .holidayDetails {
   font-family: "Nunito Sans", sans-serif;
   h2 {
-    color: #1a3381;
+    color: $dark-blue;
     margin: 0;
     font-size: 19px;
   }
   h3 {
-    color: #949494;
+    color: $medium-grey;
     margin: 7px 0 10px 0;
     font-weight: 100;
     font-size: 15px;
   }
   &-information p {
-    color: #3c3c3c;
+    color: $dark-blue;
     line-height: 1.5em;
     font-size: 14px;
   }
