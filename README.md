@@ -9,11 +9,17 @@ I have used Jest for testing molecules & organisms
 Sass for styling components
 Typescript for creating the components
 
+Node V20.10.0
+NPM V10.2.3
+
 If you have issues send me an email. Gregor.aitken@forwarddigital.co.uk
 
 Once you have cloned the Repo:
 
 ## `npm i`
+
+If peer dependency legacy causes an issue
+## `npm i --legacy-peer-deps`
 
 ## Available Scripts
 
