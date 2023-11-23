@@ -1,32 +1,30 @@
 .showMore {
-  
-
-   button {
+  button {
     background-color: white;
-    padding:10px 20px;
+    padding: 10px 20px;
     border: 0;
     color: #1a3381;
     cursor: pointer;
-    font-size:14px;
+    font-size: 14px;
 
     &::after {
-        margin-left: 10px;
-        display: inline-block;
-        font-family: monospace;
-        font-size: 20px;
-        line-height: 10px;
+      margin-left: 10px;
+      display: inline-block;
+      font-family: monospace;
+      font-size: 20px;
+      line-height: 10px;
     }
-   }
+  }
 
-   &-button {
+  &-button {
     &::after {
-        content: ">";
-        transition: transform 0.3s ease-in-out;
-  } 
+      content: ">";
+      transition: transform 0.3s ease-in-out;
+    }
 
     &--open::after {
-        content: ">";
-        transform: rotate(90deg); /* Initial position */
-     }
+      content: ">";
+      transform: rotate(90deg); /* Initial position */
     }
+  }
 }

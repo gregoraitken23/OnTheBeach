@@ -1,30 +1,30 @@
-import React from 'react'
-import './BookButton.scss'
+import React from "react";
+import "./BookButton.scss";
 
 interface bookButtonProps {
   /**
    * BackgroundColor of button
    */
-  backgroundColor?: string
+  backgroundColor?: string;
   /**
    * Price of the package
    */
-  callToAction: string
+  callToAction: string;
   /**
    * Price of the package
    */
-  price: number
+  price: number;
   /**
    * Optional click handler
    */
-  onClick?: () => void
+  onClick?: () => void;
 }
 
 /**
  * Primary UI component for user interaction
  */
 export const BookButton = ({
-  backgroundColor = '#fedc07',
+  backgroundColor = "#fedc07",
   callToAction,
   price,
   ...props
@@ -36,8 +36,7 @@ export const BookButton = ({
       style={{ backgroundColor }}
       {...props}
     >
-    <span>{callToAction}</span>
-      £{price}
+      <span>{callToAction}</span>£{price}
     </button>
-  )
-}
+  );
+};

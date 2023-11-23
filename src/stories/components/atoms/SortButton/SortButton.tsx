@@ -1,27 +1,27 @@
-import React, { useState } from 'react'
-import './sortButton.scss'
+import React, { useState } from "react";
+import "./sortButton.scss";
 
 interface bookButtonProps {
   /**
    * Icon to display right of button
    */
-  icon: React.ReactNode
+  icon: React.ReactNode;
   /**
    * sort by variable name ie price, date, alphabetically
    */
-  secondaryBoldText: string
+  secondaryBoldText: string;
   /**
    * Button text
    */
-  buttonText: string
+  buttonText: string;
   /**
    * is button selected
    */
-  isClicked?: boolean
+  isClicked?: boolean;
   /**
    * Optional click handler
    */
-  onClick: () => void
+  onClick: () => void;
 }
 
 /**
@@ -31,33 +31,40 @@ export const SortButton = ({
   icon,
   buttonText,
   onClick,
-  secondaryBoldText
+  secondaryBoldText,
 }: bookButtonProps) => {
-  const [isClicked, setIsClicked] = useState<boolean>(false)
+  const [isClicked, setIsClicked] = useState<boolean>(false);
   const handleBlur = () => {
-    setIsClicked(false)
-  }
+    setIsClicked(false);
+  };
   const handleClick = () => {
-    setIsClicked(prevState => !prevState)
-    onClick()
-  }
+    setIsClicked((prevState) => !prevState);
+    onClick();
+  };
   return (
-    <div className='sortButton'>
-    <button
-    style={{
-      // if we are to make this component fully reusable we should replace these colors with props
-      backgroundColor: !isClicked ? 'white' : '#17317f',
-      color: !isClicked ? '#17317f' : 'white',
-      cursor: 'pointer',
-      alignItems: 'center',
-      position: 'relative',
-      transition: 'background-color 0.3s ease-in-out, color 0.3s ease-in-out'
-    }}
-      onBlur={handleBlur}
-      onClick={handleClick}>
-        {buttonText}<b> {secondaryBoldText}</b>
-        <span className={isClicked ? 'sortButton-svg--clicked' : 'sortButton-svg'}>{icon}</span>
-    </button>
+    <div className="sortButton">
+      <button
+        style={{
+          // if we are to make this component fully reusable we should replace these colors with props
+          backgroundColor: !isClicked ? "white" : "#17317f",
+          color: !isClicked ? "#17317f" : "white",
+          cursor: "pointer",
+          alignItems: "center",
+          position: "relative",
+          transition:
+            "background-color 0.3s ease-in-out, color 0.3s ease-in-out",
+        }}
+        onBlur={handleBlur}
+        onClick={handleClick}
+      >
+        {buttonText}
+        <b> {secondaryBoldText}</b>
+        <span
+          className={isClicked ? "sortButton-svg--clicked" : "sortButton-svg"}
+        >
+          {icon}
+        </span>
+      </button>
     </div>
-  )
-}
+  );
+};
