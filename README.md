@@ -1,12 +1,22 @@
-# Getting Started with Create React App
+# Technical Work For On The Beach
+This was a fun one to work on!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+I decided to build this in Storybook so we can use the playground to see how the individual components work individually.
+these have been built as modularaly styled components so could be used together or on their own.
+
+Once you have cloned the Repo:
+
+##  `npm i`
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+### `npm run storybook` to run the storybook instance
+Runs the app in the development mode.\
+Open [http://localhost:6000](http://localhost:6000) to view it in the browser.
+
+### `npm run start` to run the UI where I have placed the component
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -39,8 +49,3 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
