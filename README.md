@@ -9,7 +9,7 @@ I have used Jest for testing molecules & organisms
 Sass for styling components
 Typescript for creating the components
 
-If you have issues send me an email.
+If you have issues send me an email. Gregor.aitken@forwarddigital.co.uk
 
 Once you have cloned the Repo:
 
