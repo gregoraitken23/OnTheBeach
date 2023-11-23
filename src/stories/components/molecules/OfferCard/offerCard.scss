@@ -29,7 +29,7 @@ $layout-breakpoint-small: 900px;
   }
   &-hotelInfo {
     @media (max-width: $layout-breakpoint-small)  {
-      width: 100%; 
+      width: auto;
     }
     padding: 20px;
     width: 40%;
@@ -44,6 +44,7 @@ $layout-breakpoint-small: 900px;
     color: #1a3381;
     font-size: 14px;
     margin: none;
+    font-family: "Nunito Sans", sans-serif;
   }
   p {
     font-family: "Nunito Sans", sans-serif;

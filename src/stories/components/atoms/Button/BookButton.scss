@@ -11,7 +11,7 @@ $layout-breakpoint-small: 900px;
   min-width: 150px;
   @media (max-width: $layout-breakpoint-small)  {
     min-width: 50px; 
-    width: 91%;
+    width: 100%;
   }
   border: 0;
   border-radius: 3px;
