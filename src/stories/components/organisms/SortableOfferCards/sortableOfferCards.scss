@@ -1,0 +1,28 @@
+.sortableInfoCards {
+  .offerCardContainer {
+  margin-bottom:25px;
+}
+.sortButton:nth-child(even) Button {
+  border-top : 2px solid grey;
+  border-bottom : 2px solid grey;
+}
+}
+.app-container {
+  display: flex;
+  height: 100%; /* Adjust as needed */
+  justify-content: center;
+}
+
+/* Sidebar styles */
+.sidebar {
+  width: 30%;
+  padding:20px 0;
+  float:left;
+}
+
+/* Content styles */
+.content {
+  width:70%;
+  padding: 20px 0;
+  float: left;
+}

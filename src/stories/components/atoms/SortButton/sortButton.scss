@@ -1,0 +1,26 @@
+.sortButton {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 13px;
+    Button {
+        padding: 0 13px;
+        height: 52px;
+        border: 0;
+        font-size: 16px;
+        text-align: left;
+        width: 250px;
+    }
+    svg {
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        right: 17px;
+        top: 12px;
+    }
+
+    &-svg SVG {
+        fill: #d4d4d4;
+    }
+    &-svg--clicked SVG{
+        fill: white;
+    }
+    }
