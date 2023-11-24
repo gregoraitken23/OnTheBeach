@@ -7,7 +7,7 @@ export const offerCardListData: OfferCardPropsI[] = [
   {
     hotelName: "Iberostar Grand Salome",
     location: "Cost Adeje, Tenerife",
-    starRating: 3,
+    starRating: 5,
     hotelImage: hotelImage1,
     adults: 2,
     children: 4,
@@ -24,7 +24,7 @@ export const offerCardListData: OfferCardPropsI[] = [
   {
     hotelName: "Aguamarina Golf Hotel",
     location: "Cost Adeje, Tenerife",
-    starRating: 5,
+    starRating: 4,
     hotelImage: hotelImage2,
     adults: 2,
     children: 4,
@@ -41,7 +41,7 @@ export const offerCardListData: OfferCardPropsI[] = [
   {
     hotelName: "Las Piramides Resort",
     location: "Cost Adeje, Tenerife",
-    starRating: 1,
+    starRating: 3,
     hotelImage: hotelImage3,
     adults: 2,
     infants: 0,
