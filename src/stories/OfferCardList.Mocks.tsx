@@ -32,7 +32,7 @@ export const offerCardListData: OfferCardPropsI[] = [
     departureDate: 1421948500000,
     days: 8,
     infants: 0,
-    price: 750,
+    price: 696.80,
     callToAction: "Book now",
     hotelDescription:
       "The Hotel Aguamarina Golf has an exceptional location in the south of Tenerife, overlooking the Atlantic Ocean. It is situated between the Golf del Sur and the Amarillo Golf courses, and is an ideal hotel for families, couples and groups who are looking for a holiday full of sport, sun and sea.",
@@ -45,11 +45,11 @@ export const offerCardListData: OfferCardPropsI[] = [
     hotelImage: hotelImage3,
     adults: 2,
     infants: 0,
-    children: 4,
+    children: 1,
     departureAirport: "Manchester",
     departureDate: 1751948800000,
     days: 8,
-    price: 2220,
+    price: 499.99,
     callToAction: "Book now",
     hotelDescription:
       "The Hotel Aguamarina Golf has an exceptional location in the south of Tenerife, overlooking the Atlantic Ocean. It is situated between the Golf del Sur and the Amarillo Golf courses, and is an ideal hotel for families, couples and groups who are looking for a holiday full of sport, sun and sea.",

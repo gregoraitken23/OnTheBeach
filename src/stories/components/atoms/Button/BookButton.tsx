@@ -29,6 +29,14 @@ export const BookButton = ({
   price,
   ...props
 }: bookButtonProps) => {
+  const options = {
+    style: 'decimal',
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+  };
+  const formattedPrice = price.toLocaleString('en-US', options);
+  
+  
   return (
     <button
       type="button"
@@ -36,7 +44,7 @@ export const BookButton = ({
       style={{ backgroundColor }}
       {...props}
     >
-      <span>{callToAction}</span>£{price}
+      <span>{callToAction}</span>£{formattedPrice}
     </button>
   );
 };
