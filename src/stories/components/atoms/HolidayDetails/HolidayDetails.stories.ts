@@ -29,7 +29,7 @@ export const Primary: Story = {
     children: 1,
     infants: 0,
     departureDate: 1721948400000,
-    nights: 7,
+    days: 7,
     departureAirport: "Manchester",
   },
 };
