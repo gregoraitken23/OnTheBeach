@@ -10,30 +10,32 @@ import { ReactComponent as Pound } from "../../../assets/pound.svg";
 import { ReactComponent as Star } from "../../../assets/star.svg";
 
 type Item = OfferCardPropsI;
-
-type SortOptions = "alphabetical" | "price" | "star";
 interface Props {
   data: Item[];
 }
-
+enum SortListE {
+  ALPHABETICAL = 'alphabetical',
+  PRICE = 'price',
+  STAR_RATING = 'star',
+}
 const SortableInfoCards: React.FC<Props> = ({ data }) => {
   const [sortedData, setSortedData] = useState<Item[]>(
     [...data].sort((a, b) => a.price - b.price)
   );
 
-  const handleSort = (option: SortOptions) => {
+  const handleSort = (option: SortListE) => {
     let sortedArray: Item[] = [];
 
     switch (option) {
-      case "alphabetical":
+      case SortListE.ALPHABETICAL:
         sortedArray = [...data].sort((a, b) =>
           a.hotelName.localeCompare(b.hotelName)
         );
         break;
-      case "price":
+      case SortListE.PRICE:
         sortedArray = [...data].sort((a, b) => a.price - b.price);
         break;
-      case "star":
+      case SortListE.STAR_RATING:
         sortedArray = [...data].sort((a, b) => b.starRating - a.starRating);
         break;
       default:
@@ -50,7 +52,7 @@ const SortableInfoCards: React.FC<Props> = ({ data }) => {
             buttonText="sort"
             secondaryBoldText="alphabetically"
             onClick={() => {
-              handleSort("alphabetical");
+              handleSort(SortListE.ALPHABETICAL);
             }}
             icon={<Alphabetical />}
           />
@@ -58,7 +60,7 @@ const SortableInfoCards: React.FC<Props> = ({ data }) => {
             buttonText="sort by"
             secondaryBoldText="price"
             onClick={() => {
-              handleSort("price");
+              handleSort(SortListE.PRICE);
             }}
             icon={<Pound />}
           />
@@ -66,7 +68,7 @@ const SortableInfoCards: React.FC<Props> = ({ data }) => {
             buttonText="sort by"
             secondaryBoldText="star rating"
             onClick={() => {
-              handleSort("star");
+              handleSort(SortListE.STAR_RATING);
             }}
             icon={<Star />}
           />
