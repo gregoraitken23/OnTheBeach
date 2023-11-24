@@ -38,11 +38,11 @@ export interface OfferCardPropsI {
    */
   departureDate: number;
   /**
-   * number of nights of the holiday
+   * number of days of the holiday
    */
-  nights: number;
+  days: number;
   /**
-   * number of nights of the holiday
+   * departure airport
    */
   departureAirport: string;
   /**
@@ -76,7 +76,7 @@ export const OfferCard = ({
   infants,
   departureDate,
   departureAirport,
-  nights,
+  days,
   price,
   callToAction,
   hotelDescription,
@@ -111,7 +111,7 @@ export const OfferCard = ({
               children={children}
               infants={infants}
               departureDate={departureDate}
-              nights={nights}
+              days={days}
               departureAirport={departureAirport}
             />
             <BookButton price={price} callToAction={callToAction} />

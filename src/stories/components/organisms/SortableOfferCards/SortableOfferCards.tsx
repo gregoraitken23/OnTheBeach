@@ -85,7 +85,7 @@ const SortableInfoCards: React.FC<Props> = ({ data }) => {
                 children={item.children}
                 infants={item.infants}
                 departureDate={item.departureDate}
-                nights={item.nights}
+                days={item.days}
                 departureAirport={item.departureAirport}
                 callToAction={item.callToAction}
                 price={item.price}

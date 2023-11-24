@@ -32,9 +32,9 @@ export interface holidayDetailsProps {
    */
   departureDate: number;
   /**
-   * number of nights of the holiday
+   * number of days of the holiday
    */
-  nights: number;
+  days: number;
   /**
    * departure airport of the hotel
    */
@@ -52,7 +52,7 @@ export const HolidayDetails = ({
   children,
   infants,
   departureDate,
-  nights,
+  days,
   departureAirport,
 }: holidayDetailsProps) => {
   // logic to handle singular or plural passenger text
@@ -82,7 +82,7 @@ export const HolidayDetails = ({
           <strong> {infantsExist && infants}</strong>{" "}
           {infantsExist && infantPassengerText}
           <br />
-          <strong>{departureDateString}</strong> for <strong>{nights}</strong> nights
+          <strong>{departureDateString}</strong> for <strong>{days}</strong> days
           <br />
           departing from <strong>{departureAirport}</strong>
         </p>
