@@ -24,7 +24,7 @@ const SortableInfoCards: React.FC<Props> = ({ data }) => {
     SortListE.PRICE,
     SortListE.STAR_RATING
   ]);
-  const [activeItem, setActiveItem] = useState<string>(items[0]);
+  const [activeItem, setActiveItem] = useState<string>(SortListE.PRICE);
   
   const handleItemClick = (item: string): void => {
     setActiveItem(item);
