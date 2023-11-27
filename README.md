@@ -9,6 +9,7 @@ I have used Jest for testing molecules & organisms
 Sass for styling components
 Typescript for creating the components
 
+
 Node V20.10.0
 NPM V10.2.3
 
@@ -29,11 +30,16 @@ In the project directory, you can run:
 
 Runs the app in the development mode.\
 Open [http://localhost:6006](http://localhost:6006) to view it in the browser.
+![image](https://github.com/gregoraitken23/onTheBeach/assets/80417382/5bd2bc4b-c3f7-40b7-9cd4-86eb47811496)
+
 
 ### `npm run start` to run the UI where I have placed the component
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+![image](https://github.com/gregoraitken23/onTheBeach/assets/80417382/c03de515-7f63-47df-9d97-ac34e19c4149)
+
 
 
 ### `npm run test` 
