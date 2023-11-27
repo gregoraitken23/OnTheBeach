@@ -8,20 +8,27 @@ import "./sortableOfferCards.scss";
 import { ReactComponent as Alphabetical } from "../../../assets/alphabetical.svg";
 import { ReactComponent as Pound } from "../../../assets/pound.svg";
 import { ReactComponent as Star } from "../../../assets/star.svg";
+import { SortListE } from '../../atoms/SortButton/SortButton';
 
 type Item = OfferCardPropsI;
 interface Props {
   data: Item[];
 }
-enum SortListE {
-  ALPHABETICAL = 'alphabetical',
-  PRICE = 'price',
-  STAR_RATING = 'star',
-}
+
 const SortableInfoCards: React.FC<Props> = ({ data }) => {
   const [sortedData, setSortedData] = useState<Item[]>(
     [...data].sort((a, b) => a.price - b.price)
   );
+  const [items] = useState<string[]>([
+    SortListE.ALPHABETICAL,
+    SortListE.PRICE,
+    SortListE.STAR_RATING
+  ]);
+  const [activeItem, setActiveItem] = useState<string>(items[0]);
+  
+  const handleItemClick = (item: string): void => {
+    setActiveItem(item);
+  };
 
   const handleSort = (option: SortListE) => {
     let sortedArray: Item[] = [];
@@ -50,25 +57,31 @@ const SortableInfoCards: React.FC<Props> = ({ data }) => {
         <aside className="sidebar">
           <SortButton
             buttonText="sort"
+            isClicked = {activeItem === SortListE.ALPHABETICAL}
             secondaryBoldText="alphabetically"
             onClick={() => {
               handleSort(SortListE.ALPHABETICAL);
+              handleItemClick(SortListE.ALPHABETICAL);
             }}
             icon={<Alphabetical />}
           />
           <SortButton
             buttonText="sort by"
             secondaryBoldText="price"
+            isClicked = {activeItem === SortListE.PRICE}
             onClick={() => {
               handleSort(SortListE.PRICE);
+              handleItemClick(SortListE.PRICE);
             }}
             icon={<Pound />}
           />
           <SortButton
             buttonText="sort by"
             secondaryBoldText="star rating"
+            isClicked = {activeItem === SortListE.STAR_RATING}
             onClick={() => {
               handleSort(SortListE.STAR_RATING);
+              handleItemClick(SortListE.STAR_RATING);
             }}
             icon={<Star />}
           />

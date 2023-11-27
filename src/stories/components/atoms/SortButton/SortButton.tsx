@@ -23,7 +23,11 @@ interface bookButtonProps {
    */
   onClick: () => void;
 }
-
+export enum SortListE {
+  ALPHABETICAL = 'alphabetical',
+  PRICE = 'price',
+  STAR_RATING = 'star',
+}
 /**
  * Primary UI component for user interaction
  */
@@ -31,16 +35,10 @@ export const SortButton = ({
   icon,
   buttonText,
   onClick,
+  isClicked,
   secondaryBoldText,
 }: bookButtonProps) => {
-  const [isClicked, setIsClicked] = useState<boolean>(false);
-  const handleBlur = () => {
-    setIsClicked(false);
-  };
-  const handleClick = () => {
-    setIsClicked((prevState) => !prevState);
-    onClick();
-  };
+  
   return (
     <div className="sortButton">
       <button
@@ -54,8 +52,7 @@ export const SortButton = ({
           transition:
             "background-color 0.3s ease-in-out, color 0.3s ease-in-out",
         }}
-        onBlur={handleBlur}
-        onClick={handleClick}
+        onClick={onClick}
       >
         {buttonText}
         <strong> {secondaryBoldText}</strong>
