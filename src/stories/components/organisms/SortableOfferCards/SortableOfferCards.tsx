@@ -19,11 +19,6 @@ const SortableInfoCards: React.FC<Props> = ({ data }) => {
   const [sortedData, setSortedData] = useState<Item[]>(
     [...data].sort((a, b) => a.price - b.price)
   );
-  const [items] = useState<string[]>([
-    SortListE.ALPHABETICAL,
-    SortListE.PRICE,
-    SortListE.STAR_RATING
-  ]);
   const [activeItem, setActiveItem] = useState<string>(SortListE.PRICE);
   
   const handleItemClick = (item: string): void => {
