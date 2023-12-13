@@ -2,9 +2,9 @@ import React, { useState, useMemo } from "react";
 import { OfferCard, type OfferCardPropsI } from "../../molecules/OfferCard/OfferCard";
 import { SortButton } from "../../atoms/SortButton/SortButton";
 import "./sortableOfferCards.scss";
-import { ReactComponent as Alphabetical } from "../../../assets/alphabetical.svg";
-import { ReactComponent as Pound } from "../../../assets/pound.svg";
-import { ReactComponent as Star } from "../../../assets/star.svg";
+import { ReactComponent as AlphabeticalIcon } from "../../../assets/alphabetical.svg";
+import { ReactComponent as PoundIcon } from "../../../assets/pound.svg";
+import { ReactComponent as StarIcon } from "../../../assets/star.svg";
 import { SortListE } from '../../atoms/SortButton/SortButton';
 
 type Item = OfferCardPropsI;
@@ -39,9 +39,9 @@ const SortableInfoCards = ({ data }:Props) => {
   };
 
   const sortingOptions = [
-    { label: "Alphabetical", value: SortListE.ALPHABETICAL, icon: <Alphabetical /> },
-    { label: "Price", value: SortListE.PRICE, icon: <Pound /> },
-    { label: "Star Rating", value: SortListE.STAR_RATING, icon: <Star /> },
+    { label: "Alphabetically", value: SortListE.ALPHABETICAL, icon: <AlphabeticalIcon /> },
+    { label: "Price", value: SortListE.PRICE, icon: <PoundIcon /> },
+    { label: "Star Rating", value: SortListE.STAR_RATING, icon: <StarIcon /> },
   ];
 
   return (
@@ -51,7 +51,7 @@ const SortableInfoCards = ({ data }:Props) => {
           {sortingOptions.map(({ label, value, icon }) => (
             <SortButton
               key={value}
-              buttonText="sort"
+              buttonText= {value != SortListE.ALPHABETICAL ? "sort by" : "sort"}
               isClicked={activeItem === value}
               secondaryBoldText={label.toLowerCase()}
               onClick={() => handleSort(value)}
