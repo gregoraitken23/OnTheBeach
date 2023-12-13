@@ -12,7 +12,7 @@ interface Props {
   data: Item[];
 }
 
-const SortableInfoCards: React.FC<Props> = ({ data }) => {
+const SortableInfoCards = ({ data }:Props) => {
   const [activeItem, setActiveItem] = useState<SortListE>(SortListE.PRICE);
 
   const sortedData = useMemo(() => {
