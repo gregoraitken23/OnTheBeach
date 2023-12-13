@@ -92,7 +92,7 @@ export const OfferCard = ({
   return (
     <>
       <div className="offerCardContainer">
-        <div className="offerCard" data-testid="offer-card">
+        <div className="offerCard">
           <div className="offerCard-hotelImage">
             <img src={hotelImage} alt={hotelName}></img>
             <ShowMoreButton
