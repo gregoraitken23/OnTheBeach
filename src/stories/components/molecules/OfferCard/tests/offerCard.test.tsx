@@ -21,4 +21,10 @@ describe('OfferCard Component loads', () => {
     expect(image).toBeInTheDocument();
     expect(image).toHaveAttribute('src', data.hotelImage);
   });
+
+  it('displays the book button', () => {
+    const { getByRole } = render(<OfferCard {...data} />);
+    const button = getByRole('button', { name: /button-name/i });
+    expect(button).toBeInTheDocument();
+  });
 });

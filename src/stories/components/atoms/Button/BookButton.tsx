@@ -41,6 +41,7 @@ export const BookButton = ({
     <button
       type="button"
       className="bookButton"
+      aria-label="button-name"
       style={{ backgroundColor }}
       {...props}
     >
