@@ -24,6 +24,7 @@ type Story = StoryObj<typeof meta>;
 export const Primary: Story = {
   args: {
     buttonText: "Sort",
+    label: "sort-alphabetical",
     icon: <Alphabetical />,
     secondaryBoldText: "Alphabetically",
   },
