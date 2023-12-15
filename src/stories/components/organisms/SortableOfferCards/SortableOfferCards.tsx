@@ -51,6 +51,7 @@ const SortableInfoCards = ({ data }:Props) => {
           {sortingOptions.map(({ label, value, icon }) => (
             <SortButton
               key={value}
+              label={value}
               buttonText= {value != SortListE.ALPHABETICAL ? "sort by" : "sort"}
               isClicked={activeItem === value}
               secondaryBoldText={label.toLowerCase()}

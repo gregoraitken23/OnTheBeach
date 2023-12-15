@@ -72,7 +72,7 @@ export const HolidayDetails = ({
   const infantsExist = infants > 0;
   return (
     <div className="holidayDetails">
-      <h2>{hotelName}</h2>
+      <h2 data-testid="hotelName">{hotelName}</h2>
       <h3>{location}</h3>
       <StarRating rating={starRating} />
       <div className="hotelDetails-information">

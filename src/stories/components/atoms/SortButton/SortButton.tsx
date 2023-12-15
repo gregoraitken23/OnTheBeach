@@ -14,6 +14,10 @@ interface bookButtonProps {
    * Button text
    */
   buttonText: string;
+  /*
+  aria label for testing
+  */
+  label: string;
   /**
    * is button selected
    */
@@ -36,12 +40,15 @@ export const SortButton = ({
   buttonText,
   onClick,
   isClicked,
+  label,
   secondaryBoldText,
 }: bookButtonProps) => {
   
   return (
     <div className="sortButton">
       <button
+        aria-label={label}
+        data-testid={`sort-${label}`}
         style={{
           // if we are to make this component fully reusable we should replace these colors with props
           backgroundColor: !isClicked ? "white" : "#17317f",

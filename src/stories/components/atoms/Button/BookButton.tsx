@@ -7,7 +7,7 @@ interface bookButtonProps {
    */
   backgroundColor?: string;
   /**
-   * Price of the package
+   * Call to action text
    */
   callToAction: string;
   /**
@@ -41,6 +41,7 @@ export const BookButton = ({
     <button
       type="button"
       className="bookButton"
+      aria-label="button-name"
       style={{ backgroundColor }}
       {...props}
     >
