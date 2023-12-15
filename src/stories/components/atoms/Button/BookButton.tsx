@@ -7,7 +7,7 @@ interface bookButtonProps {
    */
   backgroundColor?: string;
   /**
-   * Price of the package
+   * Call to action text
    */
   callToAction: string;
   /**
