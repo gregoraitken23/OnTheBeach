@@ -28,9 +28,9 @@ interface bookButtonProps {
   onClick: () => void;
 }
 export enum SortListE {
-  ALPHABETICAL = 'alphabetical',
-  PRICE = 'price',
-  STAR_RATING = 'star',
+  ALPHABETICAL = "alphabetical",
+  PRICE = "price",
+  STAR_RATING = "star",
 }
 /**
  * Primary UI component for user interaction
@@ -43,7 +43,6 @@ export const SortButton = ({
   label,
   secondaryBoldText,
 }: bookButtonProps) => {
-  
   return (
     <div className="sortButton">
       <button

@@ -77,12 +77,14 @@ export const HolidayDetails = ({
       <StarRating rating={starRating} />
       <div className="hotelDetails-information">
         <p>
-          <strong>{adults}</strong> {adultPassengerText},<strong> {children}</strong>{" "}
-          {childPassengerText} {infantsExist && " & "}
+          <strong>{adults}</strong> {adultPassengerText},
+          <strong> {children}</strong> {childPassengerText}{" "}
+          {infantsExist && " & "}
           <strong> {infantsExist && infants}</strong>{" "}
           {infantsExist && infantPassengerText}
           <br />
-          <strong>{departureDateString}</strong> for <strong>{days}</strong> days
+          <strong>{departureDateString}</strong> for <strong>{days}</strong>{" "}
+          days
           <br />
           departing from <strong>{departureAirport}</strong>
         </p>

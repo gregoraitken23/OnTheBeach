@@ -1,4 +1,4 @@
-@import '../../variables';
+@import "../../variables";
 $layout-breakpoint-small: 900px;
 
 .bookButton {
@@ -10,8 +10,8 @@ $layout-breakpoint-small: 900px;
   line-height: 25px;
   color: $dark-blue;
   min-width: 150px;
-  @media (max-width: $layout-breakpoint-small)  {
-    min-width: 50px; 
+  @media (max-width: $layout-breakpoint-small) {
+    min-width: 50px;
     width: 100%;
   }
   border: 0;

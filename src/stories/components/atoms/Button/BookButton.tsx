@@ -30,13 +30,12 @@ export const BookButton = ({
   ...props
 }: bookButtonProps) => {
   const options = {
-    style: 'decimal',
+    style: "decimal",
     minimumFractionDigits: 2,
     maximumFractionDigits: 2,
   };
-  const formattedPrice = price.toLocaleString('en-US', options);
-  
-  
+  const formattedPrice = price.toLocaleString("en-US", options);
+
   return (
     <button
       type="button"
