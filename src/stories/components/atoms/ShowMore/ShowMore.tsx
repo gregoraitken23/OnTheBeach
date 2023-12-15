@@ -24,7 +24,7 @@ const ShowMoreButton = ({
   toggleContent,
   product,
   isOpen,
-}:ShowMoreButtonProps) => {
+}: ShowMoreButtonProps) => {
   const isDescriptionOpen = isOpen
     ? "showMore-button--open"
     : "showMore-button";

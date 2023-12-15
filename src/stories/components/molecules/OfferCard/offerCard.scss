@@ -1,4 +1,4 @@
-@import '../../variables';
+@import "../../variables";
 $layout-breakpoint-small: 900px;
 
 .offerCardContainer {
@@ -11,14 +11,14 @@ $layout-breakpoint-small: 900px;
 
 .offerCard {
   display: flex;
-  @media (max-width: $layout-breakpoint-small)  {
-    display:block;    
+  @media (max-width: $layout-breakpoint-small) {
+    display: block;
   }
   background: white;
   justify-content: center;
   &-hotelImage {
-    @media (max-width: $layout-breakpoint-small)  {
-      width: 100%; 
+    @media (max-width: $layout-breakpoint-small) {
+      width: 100%;
     }
     width: 60%;
     position: relative;
@@ -29,7 +29,7 @@ $layout-breakpoint-small: 900px;
     }
   }
   &-hotelInfo {
-    @media (max-width: $layout-breakpoint-small)  {
+    @media (max-width: $layout-breakpoint-small) {
       width: auto;
     }
     padding: 20px;
@@ -39,7 +39,6 @@ $layout-breakpoint-small: 900px;
 .hotelDescription {
   background: white;
   padding: 15px 20px;
-
 
   h3 {
     color: $dark-blue;

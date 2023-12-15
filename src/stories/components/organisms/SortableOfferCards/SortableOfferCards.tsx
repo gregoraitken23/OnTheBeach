@@ -1,18 +1,21 @@
 import React, { useState, useMemo } from "react";
-import { OfferCard, type OfferCardPropsI } from "../../molecules/OfferCard/OfferCard";
+import {
+  OfferCard,
+  type OfferCardPropsI,
+} from "../../molecules/OfferCard/OfferCard";
 import { SortButton } from "../../atoms/SortButton/SortButton";
 import "./sortableOfferCards.scss";
 import { ReactComponent as AlphabeticalIcon } from "../../../assets/alphabetical.svg";
 import { ReactComponent as PoundIcon } from "../../../assets/pound.svg";
 import { ReactComponent as StarIcon } from "../../../assets/star.svg";
-import { SortListE } from '../../atoms/SortButton/SortButton';
+import { SortListE } from "../../atoms/SortButton/SortButton";
 
 type Item = OfferCardPropsI;
 interface Props {
   data: Item[];
 }
 
-const SortableInfoCards = ({ data }:Props) => {
+const SortableInfoCards = ({ data }: Props) => {
   const [activeItem, setActiveItem] = useState<SortListE>(SortListE.PRICE);
 
   const sortedData = useMemo(() => {
@@ -39,7 +42,11 @@ const SortableInfoCards = ({ data }:Props) => {
   };
 
   const sortingOptions = [
-    { label: "Alphabetically", value: SortListE.ALPHABETICAL, icon: <AlphabeticalIcon /> },
+    {
+      label: "Alphabetically",
+      value: SortListE.ALPHABETICAL,
+      icon: <AlphabeticalIcon />,
+    },
     { label: "Price", value: SortListE.PRICE, icon: <PoundIcon /> },
     { label: "Star Rating", value: SortListE.STAR_RATING, icon: <StarIcon /> },
   ];
@@ -52,7 +59,7 @@ const SortableInfoCards = ({ data }:Props) => {
             <SortButton
               key={value}
               label={value}
-              buttonText= {value != SortListE.ALPHABETICAL ? "sort by" : "sort"}
+              buttonText={value != SortListE.ALPHABETICAL ? "sort by" : "sort"}
               isClicked={activeItem === value}
               secondaryBoldText={label.toLowerCase()}
               onClick={() => handleSort(value)}

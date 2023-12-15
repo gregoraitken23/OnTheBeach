@@ -15,7 +15,7 @@ export const offerCardListData: OfferCardPropsI[] = [
     departureDate: 2721948400000,
     days: 7,
     infants: 2,
-    price: 1136.50,
+    price: 1136.5,
     callToAction: "Book now",
     hotelDescription:
       "Located on the coast of Tenerife, between Playa del Duque and Playa de Fanabe, this hotel offers gourmet dining, exclusive lavish spas, magnificent suites with spectacular views and a personal butler or concierge service to meet all of your needs.",
@@ -32,7 +32,7 @@ export const offerCardListData: OfferCardPropsI[] = [
     departureDate: 1421948500000,
     days: 8,
     infants: 0,
-    price: 696.80,
+    price: 696.8,
     callToAction: "Book now",
     hotelDescription:
       "The Hotel Aguamarina Golf has an exceptional location in the south of Tenerife, overlooking the Atlantic Ocean. It is situated between the Golf del Sur and the Amarillo Golf courses, and is an ideal hotel for families, couples and groups who are looking for a holiday full of sport, sun and sea.",
